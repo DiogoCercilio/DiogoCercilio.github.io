@@ -1,4 +1,6 @@
 DiogoCercilio.github.io
 =======================
 
-personal CV
+My Personal Page on Github Pages. (Under construction)
+
+[http://diogocercilio.github.io](https://diogocercilio.github.io)
