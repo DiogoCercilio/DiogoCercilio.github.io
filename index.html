@@ -1,19 +1,470 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Diogo Cercílio">
-	<meta name="description" content="My personal Github Page">
-	<meta name="keywords" content="web, frontend, webdesign, developer, diogo cercilio, brazilian web developer">
-	<title>Diogo Cercilio - Web Developer from São José dos Campos - SP - Brazil</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:100|Lobster' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-	<section class="wrapper">
-		<h1>New website coming soon</h1>
-		<p><a href="http://github.com/DiogoCercilio" title="My Github Profile">Diogo Cercilio</a> - Web Developer from São José dos Campos - SP - Brazil</p>
-		<p>If you need to contact me, please send an e-mail to <a href="mailto:diogocerciliu@gmail.com" title="Click to send an e-mail">diogocerciliu@gmail.com</a> </p>
-	</section>
+<meta name="robots" content="index,follow">
+<meta charset="UTF-8">     
+<title>Diogo Cercílio - Desenvolvimento de Sites em São José dos Campos - SP</title>    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Diogo Cercílio">
+<meta name="description" content="Precisa de um site? Entre e conheça meu trabalho! Desenvolvo sites profissionais."/>
+<meta name="keywords" content="sites, web, desenvolvimento, html, design, webdesign, portfolio">
+<link rel="shortcut icon" href="assets/img/favicon.png"/>
+<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Quicksand' rel='stylesheet' type='text/css'>
+<link defer rel="stylesheet" type="text/css" href="assets/css/main.css"/></head>
+<body id="#inicio" class="home">
+    <nav class="nav-fixed">                  
+		<ul class="nav-top">
+		    <li class="inicio"><a href="javascript:void(0)">Trabalhos</a></li>
+		    <li class="tecnologias"><a href="javascript:void(0)">Curriculo</a></li>
+			<li class="sobre"><a href="javascript:void(0)">Sobre mim</a></li>
+		    <li class="contato"><a href="javascript:void(0)">Contato</a></li>
+		    <li><a href="lab/" target="_blank">Experimentos</a></li>    
+		</ul>
+	</nav>
+
+    <div class="mask"></div>
+    <div class="tooltip-work"></div>
+    <div class="glow"></div>
+    
+    <header class="wrapper-top">
+        <header class="top">
+    		<section class="logo">
+    			<a href="#">
+					<h1 class="inicio" title="Desenvolvimento de sites em São José dos Campos">Diogo Cercilio</h1>
+					<h2>desenvolvimento web</h2>
+				</a>
+			</section>
+			<span class="trigger-mobile"></span>
+		</header>
+	</header>
+
+    <section class="wrapper-banner">    
+        <aside>
+        	<ul id="sliding-navigation">
+    			<li class="sliding-element"><h3>Menu Principal</h3></li>
+    			<li class="sliding-element"><a href="javascript:void(0)" class="inicio">Trabalhos</a></li> 
+    			<li class="sliding-element"><a href="javascript:void(0)" class="tecnologias">Curriculo</a></li>
+    			<li class="sliding-element"><a href="javascript:void(0)" class="sobre">Sobre mim</a></li>
+    			<li class="sliding-element"><a href="javascript:void(0)" class="contato">Contato</a></li>
+    			<li class="sliding-element"><a href="lab/" target="_blank">Experimentos</a></li>
+			</ul>
+
+			<section class="info">
+			    <p>Contato</p>
+			    <p><i>E-mail:</i>diogocerciliu@hotmail.com</p>
+			    <p>Tel: 55 12 8198-0477</p>
+			    <h1>Diogo Cercílio - Desenvolvimento de Sites em São José dos Campos - SP</h1>        
+			</section>
+		</aside>
+        <section class="banner">
+             <div class='work' id='work1'><img src='jobs/gallery/thumb/05diogo-cercilio-descricao-da-arte-alex-pimenta-eleicao-cacapava.jpg' alt=''></div>
+             <div class='work' id='work2'><img src='jobs/gallery/thumb/02diogo-cercilio-descricao-do-site-celi-e-cintia.jpg' alt=''></div>
+             <div class='work' id='work3'><img src='jobs/gallery/thumb/04diogo-cercilio-descricao-do-site-meu-portfolio.jpg' alt=''></div>
+             <div class='work' id='work4'><img src='jobs/gallery/thumb/06diogo-cercilio-descricao-do-site-template-de-transportadora.jpg' alt=''></div>
+             <div class='work' id='work5'><img src='jobs/gallery/thumb/07diogo-cercilio-descricao-do-site-poliedro-nepp.png' alt=''></div>
+             <div class='work' id='work6'><img src='jobs/gallery/thumb/01diogo-cercilio-descricao-do-site-camilo-tattoo.jpg' alt=''></div>
+             <div class='work' id='work7'><img src='jobs/gallery/thumb/03diogo-cercilio-descricao-do-site-pallace-cosmeticos.jpg' alt=''></div>
+             <div class='work' id='work8'><img src='jobs/gallery/thumb/08diogo-cercilio-descricao-do-poliedro-novas-colecoes.png' alt=''></div>
+        </section>
+        <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+    
+    <section class="wrapper-content content-box">    
+        <section class="more-works">
+		<div class="close-more-work-details" title="Fechar">Fechar</div>
+		<div class="wrapperWorks"></div>
+
+		<div class="clear"></div>
+        </section>
+        <section class="content">
+            <hr>
+            <section class="wrapper-curriculo-itens">
+                <div class="curriculoItens pressed">
+                    <div class="tooltip">Tecnologias web, referente a aparência.</div>
+                    <h1 class="curriculoFrontend">Design</h1>
+                </div>
+
+                <div class="curriculoItens">
+                    <div class="tooltip">Programação em geral</div>            
+                    <h1 class="curriculoBackend">Code</h1>
+                </div>
+
+                <div class="curriculoItens">
+                    <div class="tooltip">Outras tecnologias (Ex: CMS, SEO etc..)</div>            
+                    <h1 class="curriculoAnother">Outros</h1>
+                </div> 
+
+                <div class="clear"></div>
+            </section>
+
+
+            <section class="wrapperFrontend">
+                <h1 class="mainTitle">Conhecimentos - Desenvolvimento Front End</h1>
+                <div class="backCurriculo">Voltar</div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/html5.png" alt="HTML5" title="HTML5">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>HTML5</h1>
+                        <p>HTML5 - Uso das Novas tags (aplicadas com consciência). HTML5 ainda é uma linguagem nova, e por isso a acompanho constantemente. Ainda não desenvolvo SVG e Canvas (em breve).</p>
+                    </div>
+
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div>
+                </div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/css3.png" alt="CSS3" title="CSS3">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>CSS3</h1>
+                        <p>CSS3 - Conhecimento dos novos seletores e atributos da linguagem, tais como border radius, gradients, box-shadow, animate, transition, elementos a animações 3D, etc.</p>
+                    </div>
+
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-five"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/js.png" alt="Javascript" title="Javascript">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Javascript</h1>
+                        <p>Javascript - Conhecimento da sintaxe da linguagem, variáveis, tipos de dados, blocos condicionais, blocos de repetição, métodos, objetos, funções, arrays etc. Uso javascript juntamente com jquery. Sigo o conceito do desenvolvimento não obstrutivo, e mantenho meu código o mais organizado possível.</p>
+                    </div>
+
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/jq.png" alt="Jquery" title="Jquery">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Jquery</h1>
+                        <p>Jquery - Considero essencial em qualquer projeto, devido as grandes possibilidades que esta biblioteca pode nos trazer, seja para frontend ou backend. <br> Tenho conhecimento dos seletores (classe, id, atributos etc), e dos métodos da linguagem, que juntamente com javascript "puro" torna-se mais poderosa ainda.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-four"></div>
+                    </div> 
+                </div>              
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/ajax.png" alt="Ajax" title="Ajax">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Ajax</h1>
+                        <p>Ajax - Utilizo ajax apenas para pequenas requisições.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-two"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/fw.png" alt="FireWorks" title="FireWorks">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>FireWorks</h1>
+                        <p>Fireworks - Utilizo FireWorks em praticamente todos os meus projetos, e tenho domínio das ferramentas para desenvolvimento deste software.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-five"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/ps.png" alt="Photoshop" title="Photoshop">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Photoshop</h1>
+                        <p>Photoshop - Como utilizo mais o fireworks, não tenho muita experiência no Photoshop, porém ultimamente tenho me empenhado em melhorar meu entendimento deste software.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-two"></div>
+                    </div>                                                                          
+                </div>                                                                          
+            </section> 
+
+            <section class="wrapperBackend">
+                <h1 class="mainTitle">Conhecimentos - Desenvolvimento Back End</h1>
+                <div class="backCurriculo">Voltar</div>
+                
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/java.png" alt="Java (SE)" title="Java (SE)">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Java (SE)</h1>
+                        <p>JAVA (Standard edition) - A pouco tempo comecei a estudar esta linguagem, devido seu enorme potencial. Ainda não me considero programador Java, mas já conheço os conceitos e algumas aplicações da linguagem.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-one"></div>
+                    </div>
+                </div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/php.png" alt="PHP" title="PHP">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>PHP</h1>
+                        <p>PHP - Utilizei PHP em quase todos os meus projetos. Tenho conhecimento da sintaxe da linguagem, variáveis, tipos de dados, blocos condicionais, blocos de repetição, métodos, objetos, funções, arrays etc.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div>
+                </div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/mysql.png" alt="Mysql" title="Mysql">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Mysql</h1>
+                        <p>Mysql - Conhecimento de CRUD - create, retrieve (alguns chamam read), update e delete. Utilizo juntamente com PHP.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/js.png" alt="Javascript" title="Javascript">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Javascript</h1>
+                        <p>Javascript - Conhecimento da sintaxe da linguagem, variáveis, tipos de dados, blocos condicionais, blocos de repetição, métodos, objetos, funções, arrays etc. Uso javascript juntamente com jquery. Sigo o conceito do desenvolvimento não obstrutivo, e mantenho meu código o mais organizado possível.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/jq.png" alt="Jquery" title="Jquery">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Jquery</h1>
+                        <p>Jquery - Considero essencial em qualquer projeto, devido as grandes possibilidades que esta biblioteca pode nos trazer, seja para frontend ou backend. <br> Tenho conhecimento dos seletores (classe, id, atributos etc), e dos métodos da linguagem, que juntamente com javascript "puro" torna-se mais poderosa ainda.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-four"></div>
+                    </div> 
+                </div>                                                        
+            </section>   
+
+            <section class="wrapperAnother">
+                <h1 class="mainTitle">Conhecimentos - Outras ferramentas</h1>
+                <div class="backCurriculo">Voltar</div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/maps.png" alt="API Google Maps - V2 e V3" title="API Google Maps - V2 e V3">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>API Google Maps - V2 e V3</h1>
+                        <p>Exemplo de um projeto que desenvolvi <a style='color:#fff;' href='http://www.sistemapoliedro.com.br/sep/unidades_parceiras/' target='_blank'>aqui</a>.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div>
+                </div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/seo.png" alt="SEO" title="SEO">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>SEO</h1>
+                        <p>SEO - Conhecimento de técnicas de Search Optimization Engine, tais como analytics, Google +, meta tags, disposição dos conteúdos, títulos de textos, títulos de páginas, para melhora nas indexações, performance do site (conta e muito), urls, amigáveis, integração com redes sociais etc.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-four"></div>
+                    </div>
+                </div>
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/firebug.png" alt="Firebug" title="Firebug">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Firebug</h1>
+                        <p>Firebug - Conhecimento desta ferramenta para debugar o código, o que traz uma grande agilidade ao desenvolvedor. Também utilizo o debug do Chrome.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-five"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/sublime.png" alt="Sublime Text" title="Sublime Text">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Sublime Text</h1>
+                        <p>Sublime Text - IDE na qual qual hoje desenvolvo meus projetos. Também é de extrema importância, uma vez que me traz as praticidades do PACKAGE CONTROL, além de seus inúmeros snippets e interface amigável.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-five"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/joomla.png" alt="Joomla" title="Joomla">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Joomla</h1>
+                        <p>CMS JOOMLA - Instalação e manutenção do administrador, e básico do desenvolvimento de temas.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/wp.png" alt="Wordpress" title="Wordpress">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Wordpress</h1>
+                        <p>CMS Wordpress - Instalação e manutenção do administrador, e básico do desenvolvimento de temas.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-three"></div>
+                    </div> 
+                </div> 
+
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/scrum.png" alt="Scrum" title="Scrum">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Scrum</h1>
+                        <p>SCRUM - Tenho experiência com esta metodologia de trabalho, na qual traz um grande ganho de produtividade.</p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-five"></div>
+                    </div>  
+                </div>  
+                
+                <div class="tecnologies">
+                    <div class="logoTecnologie">
+                        <img src="assets/img/eclipse.png" alt="Eclipse" title="Eclipse">
+                    </div>
+
+                    <div class="descriptionTecnologie">
+                        <h1>Eclipse</h1>
+                        <p>Eclipse - Conhecimento básico da IDE. Estou me aprimorando. </p>
+                    </div>
+                    <div class="level">
+                        <h3>nível de conhecimento:</h3>
+                        <div class="levelTecnologie level-one"></div>
+                    </div>
+                </div>
+            </section>                                   
+    
+            <hr>                                             
+        </section>
+
+        <section class="content" style="margin-top: 0px;">
+            <div id="sobre"></div>
+            <section class="aboutImage">
+            	<h1>Diogo Cercílio</h1>
+            	<h2>desenvolvimento web</h2>
+            	<p>Meu nome é Diogo Cercílio, tenho 27 anos, e desenvolvo soluções para internet.</p>
+                <p>Meu principal foco é a qualidade de cada projeto desenvolvido, por isso busco estar em constante evolução, seja através de leitura, discussões, novos projetos e é claro, estudando sempre.</p>
+                <p>Procuro cada vez mais atingir os mais elevados níveis de cada competência que me propus a trabalhar.</p>
+            </section>
+
+            <section class="meio"></section>
+
+            <section class="aboutContent">
+                <p class='rightAbout'>Atualmente trabalho como desenvolvedor freelancer, e busco sempre novos desafios na área de TI, que felizmente é uma área onde não há limites para evolução!</p><br/>
+            	<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.diogocercilio.besaba.com&layout=standard&<br>show_faces=false&width=380&action=like&colorscheme=light&height=25&locale=pt_BR" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px;max-width:100%; height:25px;" allowTransparency="true"></iframe>
+
+            	<ul class="social-links">
+            		<li><a class="email" href="mailto:diogocerciliu@gmail.com?Subject=Contato%20Site">E-mail</a></li>
+            		<li><a class="facebook" href="https://www.facebook.com/diogo.cercilio">Facebook</a></li>
+            		<li><a class="twitter" href="https://twitter.com/DiogoCercilio">Twitter</a></li>
+            		<li><a class="linkedin" href="http://br.linkedin.com/pub/diogo-cercílio/70/a2a/817/">Linkedin</a></li>
+            		<li><a class="github" href="https://github.com/DiogoCercilio">Github</a></li>
+            	</ul>
+            </section>
+        </section> 
+
+        <div class="clear"></div>      
+    </section>
+        
+    <section id="contato"></section>    
+    <iframe src="http://hmg.besaba.com/teste/contact.php" style="width:100%;height:500px;overflow:hidden;" frameborder="0"></iframe>
+
+    <div class="clear"></div>
+    <footer class="wrapperFooter">
+        <section class="footer">
+            <div class="clear"></div> 
+        </section>
+    </footer>
+    <footer class="posFooter">
+        <div class="credits">
+            <p>Desenvolvimento de Sites em São José dos Campos - SP</p>
+            <p>Telefone: +55 12 9-8203-2815 E-mail: diogocerciliu@gmail.com</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-41316021-1', 'diogocercilio.com');ga('send', 'pageview');</script>   -->
 </body>
 </html>
