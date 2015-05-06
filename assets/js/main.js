@@ -197,7 +197,6 @@ var moreWorkDetails = function(){
         }
 
         $.ajax({
-            type: "POST",
         	url:"jobs/job-"+src+".html",
         	success: function(response){
 				$(".wrapperWorks").html(response);
