@@ -31,6 +31,11 @@ h2 {
 	color:#fff;
 }
 
+h4{
+    margin:40px 0 5px 0;
+    font-family:'Quicksand', sans-serif;
+}
+
 p {
 	color:#d0d0d0;
 	font-family:arial;
@@ -295,13 +300,15 @@ body {
 	min-height:100px;
 }
 
-.info p {
+.info p,.info h4 {
 	font-size:.8em;
+	font-family:arial;
 	color:#555;
+	margin:0;
 	font-weight:lighter;
 }
 
-.info h1 {
+.info h5 {
 	color:#555;
 	font-size:.7em;
 	font-weight:lighter;
@@ -489,10 +496,11 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	padding:0 0 20px 0;
 }
 
-.credits p {
+.credits p,	.credits h5{
 	color:#555;
 	font-size:12px;
 	font-family:arial;
+	font-weight:100;
 	padding:0;
 	margin:0;
 	text-align:center;
@@ -803,7 +811,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 }
 
 .aboutContent p {
-	margin:0 0 30px 0;
+	margin:0 0 10px 0;
 	font-size:15px;
 	color:#666;
 	text-align:justify;
@@ -880,10 +888,12 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	padding:0 25px 20px 0;
 }
 
-.descriptionTecnologie h1 {
+.descriptionTecnologie h2 {
 	color:#bbb;
 	font-size:19px;
 	font-family:'Quicksand', sans-serif;
+	font-weight:100;
+	letter-spacing:-1px;
 	margin:0 0 3px 0;
 	padding:0;
 	max-width:100%;
@@ -963,7 +973,11 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	border-color: #6a0 #efe #afa #670;
 }
 
-h1.mainTitle {
+h2.mainTitle {
+	font-size: 2em;
+	font-family: 'Quicksand', sans-serif;
+	color: #bbb;
+	letter-spacing: -1px;	
 	margin:20px 0 0px 0;
 	padding:0;
 }
@@ -1010,9 +1024,11 @@ h1.mainTitle {
 	position:relative;
 }
 
-.curriculoItens h1 {
+.curriculoItens h2 {
 	text-align:center;
 	font-family:'Bilbo Swash Caps', helvetica;
+	font-size:2em;
+	font-weight:100;
 	color:#999;
 	text-shadow:1px 1px 1px #000;
 	cursor:pointer;
@@ -1021,7 +1037,7 @@ h1.mainTitle {
 	letter-spacing:1px;
 }
 
-.curriculoItens h1:hover {
+.curriculoItens h2:hover {
 	color:#fff;
 }
 
@@ -1031,13 +1047,13 @@ h1.mainTitle {
 	-webkit-filter:brightness(.7);
 }
 
-.pressed h1 {
+.pressed h2 {
 	color:#111;
 	/*padding:1px 0 0 1px;*/
 	text-shadow:-1px -1px 0px #000,0px 1px 0 #333;
 }
 
-.pressed h1:hover {
+.pressed h2:hover {
 	color:#111;
 }
 
@@ -1555,7 +1571,7 @@ table {
 	src:url(../fonts/dinnextltpro-condensed-webfont.woff);
 }
 
-.aboutImage h1 {
+.aboutImage h2 {
 	color:#cf3;
 	text-shadow:-1px -1px 1px #000;
 	margin:0;
@@ -1566,9 +1582,10 @@ table {
 	text-transform:uppercase;
 	text-align:center;
 	margin:22px 0 0 0;
+	letter-spacing:-1px;
 }
 
-.aboutImage h2 {
+.aboutImage h3 {
 	text-transform:uppercase;
 	font-size:30px;
 	font-family:'Regular Condensed';
@@ -1652,11 +1669,29 @@ hr{
 	float:left;
 }
 
-p.rightAbout {
+h2.rightAbout {
+	margin:0 0 30px 0;
+	color:#666;
 	font-size:1.6em;
 	font-family:'Quicksand', sans-serif;
+	font-weight:100;
 	line-height:30px;
 	text-align:center;
+	letter-spacing:-1px;
+}
+ul.references-list{
+    margin:0 0 40px 0;
+}
+ul.references-list li{
+    display: inline-block;
+    background: #79d;
+    border: 1px solid #68c;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin: 2px 0;
+}
+ul.references-list a{
+    color:#fff;
 }
 
 @font-face {
@@ -1858,7 +1893,7 @@ p.rightAbout {
 	.aboutImage{
 		width:50%;
 	}
-	.aboutImage h1{
+	.aboutImage h2{
 		font-size:2.3em;
 		line-height:1em;
 	}
@@ -1866,7 +1901,7 @@ p.rightAbout {
 		padding:0 10px;
 		font-size:.9em;
 	}
-	.aboutImage h2{
+	.aboutImage h3{
 		font-size:1.4em;
 		margin-bottom:.6em;
 	}
