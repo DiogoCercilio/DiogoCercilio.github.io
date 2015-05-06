@@ -196,22 +196,12 @@ var moreWorkDetails = function(){
                 break
         }
 
-        $.ajax({
-        	url:"jobs/job-"+src+".html",
-        	success: function(response){
-				$(".wrapperWorks").html(response);
-				$('.more-works').fadeIn();
-		        $("html, body").animate({
-		            scrollTop: $(".more-works").offset().top - 70
-		        }, 400, function(){
-		        $('.fullImageWork').css('visibility','visible');
-		        	
-		        });
-        	}
-        });
-
-		// $(".wrapperWorks").load('jobs/job-'+src+'.html')
+		$(".wrapperWorks").load('jobs/job-'+src+'.html?v=2')
+		$('.more-works').fadeIn();
  
+        $("html, body").animate({
+            scrollTop: $(".more-works").offset().top - 70
+        }, 400)
     });
     $("aside a,.nav-fixed a").click(function() {
         $(".more-works img").hide();

@@ -589,12 +589,6 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	float:left;
 	margin:10px 0 20px 5%;
 	text-align:center;
-	visibility:hidden;
-	-webkit-transition:1s visibility ease;
-	-o-transition:1s visibility ease;
-	-moz-transition:1s visibility ease;
-	-ms-transition:1s visibility ease;
-	transition:1s visibility ease;
 }
 
 .fullImageWork img {
