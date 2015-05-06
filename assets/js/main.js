@@ -5,9 +5,6 @@
 
 
 var loadElements = function() {
-    if (navigator.appName != "Microsoft Internet Explorer") {} else {
-        $("ul#sliding-navigation li.sliding-element li").css("background", "#f11")
-    }
     $(".banner").css("marginLeft", "-200px");
     $(".banner").animate({
         marginLeft: "0px",
@@ -47,13 +44,6 @@ var slide = function(c, d, g, a, h) {
 };
 
 var tooltipWork = function(){
-    $(".tip").unbind("click");
-    var b = $(".nav li").eq(0).text();
-    if (b.indexOf("Navigation")) {
-        var a = ""
-    } else {
-        var a = ""
-    }
     $(".work").hover(function() {
         el = $(this);
         $(this).prepend('<div class="tip" style="display:none;"></div>');
@@ -97,19 +87,12 @@ var tooltipWork = function(){
 };
 
 var navFixed= function(){
-    var c = $(window).width();
-    var b = (c / 2) - ($(".nav-fixed").width() / 2 - 100);
-    $(".nav-fixed").css("left", b);
     var a;
     $(window).scroll(function() {
         var d = $(window).scrollTop();
-        if (d >= 166) {
-            $('.logo').addClass('active');
-            $(".top-space").fadeOut(400);
+        if (d >= 300) {
             $(".nav-fixed").fadeIn(1000)
         } else {
-            $('.logo').removeClass('active');
-            $(".top-space").fadeIn(1000);
             $(".nav-fixed").fadeOut(300);
         }
     })
@@ -124,12 +107,12 @@ var curriculoButtonTip = function(){
     $(".curriculoItens").hover(function() {
         $(this).find("div").stop().animate({
             top: "-28px",
-            opacity: "1",
+            opacity:1,
         }, 200)
     }, function() {
         $(this).find("div").stop().animate({
             top: "0px",
-            opacity: "0",
+            opacity:0,
         }, 200)
     })
     showBoxContent();    
@@ -196,8 +179,8 @@ var moreWorkDetails = function(){
                 break
         }
 
-		$(".wrapperWorks").load('jobs/job-'+src+'.html?v=2')
-		$('.more-works').fadeIn();
+		$(".wrapperWorks").load('jobs/job-'+src+'.html');
+		$('.more-works').fadeIn(300);
  
         $("html, body").animate({
             scrollTop: $(".more-works").offset().top - 70

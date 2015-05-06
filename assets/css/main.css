@@ -110,9 +110,7 @@ body {
 .tip {
 	width:100%;
 	height:100%;
-	border:1px solid #000;
 	background:rgba(0, 0, 0, 0.5) url(../img/link.png) center -200px no-repeat;
-	border-width:0 0 1px 0;
 	color:#fff;
 	position:absolute;
 	top:0;
@@ -139,7 +137,6 @@ body {
 	width:100%;
 	height:555px;
 	background-color:#171717;
-	background-image:url(../img/bg.jpg);
 	border-bottom:1px solid #000;
 	position:absolute;
 	top:0;
@@ -198,10 +195,8 @@ body {
 	border:1px solid #111;
 	border-width:0 0 1px 0;
 	background-color:#111;
-	background-image:url(../img/bg-top.png);
-	background-repeat:no-repeat;
-	background-position:top right;
-	box-shadow:1px 5px 70px #000 inset, 0px 3px 15px #000;
+	background-image:url(../img/bg.jpg);
+	box-shadow:0px 3px 15px rgba(0,0,0,.9);
 	position:fixed;
 	top:0;
 	z-index:9997!important;
@@ -340,13 +335,6 @@ body {
 	color:#fff;
 }
 
-.top-space {
-	height:40px;
-	position:absolute;
-	top:0;
-	right:40px;
-}
-
 .banner {
 	width:calc(100% - 250px);
 	overflow:hidden;
@@ -356,10 +344,6 @@ body {
 	top:-10px;
 	left:0;
 	z-index:98;
-}
-
-.banner img {
-	/*max-width:100%;*/
 }
 
 .banner img{
@@ -386,18 +370,6 @@ body {
 	height:auto;
 	min-height:200px;
 	float:left;
-}
-
-#navigation-block {
-	position:relative;
-	top:200px;
-	left:200px;
-}
-
-#hide {
-	position:absolute;
-	top:3px;
-	left:-7px;
 }
 
 ul#sliding-navigation {
@@ -711,13 +683,6 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	width:47%;
 	margin-left:2.5%;
 	float:left;
-}
-
-.box-contact input[type="text"]{
-}
-.box-contact input[name="contact_ddd"]{
-}
-.box-contact input[name="contact_phone"]{
 }	
 .inputs {
 	width:50%;
@@ -794,16 +759,16 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 
 .nav-fixed {
 	height:50px;
-	position:fixed;
+	position:absolute;
 	z-index:9998;
-	top:10px;
+	top:15px;
 	display:none;
 	text-align:center;
-	left:300px;
+	right:0;
 }
 
 .nav-fixed a {
-	color:#ccc;
+	color:#ddd;
 	font-family:'Quicksand', sans-serif;
 	font-size:14px;
 }
@@ -814,7 +779,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	color:#fff;
 }
 .nav-fixed li:last-child {
-	padding-left:0;
+	padding-right:0;
 }
 
 .contactRightTop {
@@ -845,7 +810,6 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	position:relative;
 	z-index:1;
 }
-
 .aboutContent h1 {
 	margin:10px 0 10px 0;
 	font-size:60px;
@@ -853,14 +817,12 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	color:orange;
 	text-shadow:1px 1px 1px #333;
 }
-
 .aboutContent p {
 	margin:0 0 10px 0;
 	font-size:15px;
 	color:#666;
 	text-align:justify;
 }
-
 .aboutImage {
 	width:calc(50% - 74px);
 	height:auto;
@@ -872,11 +834,9 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	position:relative;
 	z-index:1;
 }
-
 .aboutImage img {
 	width:400px;
 }
-
 .formation {
 	width:100%;
 	float:left;
@@ -965,23 +925,23 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 }
 
 .level-one {
-	background-position:0 -124px!important;
+	background-position:0 -124px;
 }
 
 .level-two {
-	background-position:0 -93px!important;
+	background-position:0 -93px;
 }
 
 .level-three {
-	background-position:0 -63px!important;
+	background-position:0 -63px;
 }
 
 .level-four {
-	background-position:0 -32px!important;
+	background-position:0 -32px;
 }
 
 .level-five {
-	background-position:0 0!important;
+	background-position:0 0;
 }
 
 .backCurriculo {
@@ -1794,7 +1754,7 @@ ul.references-list a{
 		max-width:90%;
 	}	
 	.banner{
-		width:calc(100% - 220px);
+		width:calc(100% - 180px);
 	}		
 }
 
@@ -1802,9 +1762,6 @@ ul.references-list a{
 	.glow{
 		height:520px;
 	}	
-	.top-space{
-		right:50px;
-	}
 	.tip{
 		font-size:.6em;
 		padding:10px;
@@ -1815,13 +1772,30 @@ ul.references-list a{
 		padding-left:0;
 	}
 	.nav-fixed a{
-		font-size:.8em
+		font-size:.9em
 	}
+	ul.social-links li{
+		margin:10px 0;
+	}	
 }
 
 @media (max-width:780px){
 	h1{
 		font-size:1.3em;
+	}
+	h2.mainTitle {
+		font-size:1.2em;
+		margin-bottom:10px;
+	}
+	h4{
+		font-size:.8em;
+		margin-bottom:5px;
+	}
+	ul.references-list li{
+		font-size:.9em;
+	}
+	.descriptionTecnologie h2{
+		font-size:1.2em;
 	}
 	.glow{
 		height:480px;
@@ -1882,7 +1856,7 @@ ul.references-list a{
 	.aboutImage p{
 		font-size:1.1em;
 	}	
-	p.rightAbout{
+	h2.rightAbout{
 		font-size:1.1em;
 		line-height:1.3em;
 	}
@@ -1896,13 +1870,10 @@ ul.references-list a{
 		max-width:95%;
 		padding-top:45px;
 	}
-	ul.social-links li{
-		margin:10px 3px;
-	}
 	.wrapperWorks h1{
 		font-size:1.3em;
 		margin-top:30px;
-	}	
+	}
 }
 @media (max-width:650px){
 	.glow{
@@ -2027,5 +1998,8 @@ ul.references-list a{
 	}
 	.fullImageWork{
 		margin-bottom:30px;
+	}
+	.curriculoItens h2{
+		font-size:1.5em;
 	}
 }
