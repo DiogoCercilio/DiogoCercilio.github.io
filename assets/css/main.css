@@ -1,3 +1,18 @@
+::-webkit-input-placeholder {
+   color:#444;
+}
+
+:-moz-placeholder {
+   color:#444;
+}
+
+::-moz-placeholder {
+   color:#444;  
+}
+
+:-ms-input-placeholder {  
+   color:#444;  
+}
 img, body, html, ul, li, a, p, h1, h2, h3, h4, input, textarea,aside {
 	margin:0;
 	padding:0;
@@ -497,7 +512,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	border-radius:2px;
 	box-shadow:1px 1px 10px #aaa inset;
 	border-top:5px solid #8f2;
-	margin:50px 0;
+	margin-top:50px;
 }
 
 .close-more-work-details {
@@ -542,10 +557,12 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 }
 
 .descriptionWork h2 {
-	color:#111;
-	font-family:'Quicksand', sans-serif;
-	font-size:1.4em;
-	font-weight:100;
+	color: #444;
+	font-family: 'Bilbo Swash Caps', helvetica;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 0 #fff;
 }
 
 .descriptionWork p {
@@ -573,6 +590,8 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	max-width:100%;
 	box-shadow:-5px 7px 20px #bbb;
 }
+.fullImageWork img:hover {
+}
 
 .wrapperTecnologies {
 	width:100%;
@@ -581,7 +600,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	border:1px solid #ddd;
 	padding:4px 0 0 0;
 	text-align:center;
-	margin-top:12px;
+	margin:5px 0 16px 0;
 }
 
 .wrapperTecnologies img {
@@ -944,8 +963,8 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	border-color: #6a0 #efe #afa #670;
 }
 
-.mainTitle h1 {
-	margin:0;
+h1.mainTitle {
+	margin:20px 0 0px 0;
 	padding:0;
 }
 
@@ -999,6 +1018,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	cursor:pointer;
 	display:block;
 	margin:0;
+	letter-spacing:1px;
 }
 
 .curriculoItens h1:hover {
@@ -1659,6 +1679,13 @@ p.rightAbout {
 	color:#aaa;
 }
 
+.contact_frame{
+	width:100%;
+	min-height:500px;
+	overflow:hidden;
+	border:none;
+}
+
 @media (max-width:1200px){
 	.wrapper-banner aside {
 		width:180px;
@@ -1893,6 +1920,9 @@ p.rightAbout {
 	}
 	.tecnologies img{
 		max-width:100%;
+	}
+	.contact_frame{
+		min-height:600px;
 	}
 }
 @media (max-width:400px){

@@ -196,7 +196,7 @@ var moreWorkDetails = function(){
                 break
         }
 
-		$(".wrapperWorks").load('jobs/job-'+src+'.html')
+		$(".wrapperWorks").load('jobs/job-'+src+'.html?v=2')
 		$('.more-works').fadeIn();
  
         $("html, body").animate({

@@ -4,8 +4,8 @@
 <meta charset="UTF-8">     
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Quicksand' rel='stylesheet' type='text/css'>
-<link defer rel="stylesheet" type="text/css" href="assets/css/main.css"/></head>
-<body id="#inicio" class="home" style="background:url(http://hmg.besaba.com/teste/assets/img/bg-contact-page.jpg)fixed center no-repeat;background-size:cover;">
+<link defer rel="stylesheet" type="text/css" href="http://diogocercilio.github.io/assets/css/main.css"/></head>
+<body id="#inicio" class="home" style="background:url(http://diogocercilio.github.io/assets/img/bg-contact-page.jpg)fixed center no-repeat;background-size:cover;">
     <section id="contato" style="background:none;">
         <div class="box-contact">
                 <h1>Contato</h1>
