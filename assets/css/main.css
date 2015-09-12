@@ -87,8 +87,8 @@ body {
 }
 
 .tooltip-work {
-	min-width:250px;
-	min-height:215px;
+	min-width:343px;
+	min-height:400px;
 	height:auto;
 	background:#fff;
 	background-image:url(../img/load.gif);
@@ -339,11 +339,16 @@ body {
 	width:calc(100% - 250px);
 	overflow:hidden;
 	float:left;
-	margin:40px 0 0 0;
+	margin:40px 0 0 -200px;
 	position:relative;
 	top:-10px;
 	left:0;
 	z-index:98;
+	-webkit-transition:.5s all ease;
+}
+.banner.active{
+	margin-left:0;
+	box-shadow:2px 2px 4px rgba(0,0,0,1.1);
 }
 
 .banner img{

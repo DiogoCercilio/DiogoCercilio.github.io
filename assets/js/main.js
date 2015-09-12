@@ -5,10 +5,8 @@
 
 
 var loadElements = function() {
-    $(".banner").css("marginLeft", "-200px");
-    $(".banner").animate({
-        marginLeft: "0px",
-    }, 500)
+
+    $(".banner").addClass('active');
     slide("#sliding-navigation", 25, 15, 150, 0.8);
 };
 
@@ -40,6 +38,7 @@ var slide = function(c, d, g, a, h) {
             }, 150)
         })
     });
+    
     tooltipWork();
 };
 
