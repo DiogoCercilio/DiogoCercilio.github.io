@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Waterfall</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<aside class="is-hide">
+		<span class="trigger-menu">Menu</span>
+		<ul>
+			<li><a href="#" id="all" class="active">All Devices</a></li>
+			<li><a href="#" id="smarts">Smartphones</a></li>
+			<li><a href="#" id="tablets">Tablets</a></li>
+			<li><a href="#" id="desktop">Desktop</a></li>
+		</ul>
+	</aside>
+		
+	<div class="content loading is-hide">
+		<a class="new-button" href="index.html">Try Again!</a>
+		<progress value="0" data-count="1"></progress>
+
+		<div class="clear"></div>
+	</div>
+	
+	<form action="#" class="search">
+		<div class="description">
+			<h1>waterfall.io</h1>
+			<p>Test all mobile devices on real time as a Waterfall.</p>
+			<p>* This app test only the layout responsivity (media queries). If you'd like to test using the browser user agent, please add the chrome extension below to use waterfall:</p>
+
+			<a class="btn" href="https://chrome.google.com/webstore/detail/user-agent-switcher/lkmofgnohbedopheiphabfhfjgkhfcgf/related?utm_source=chrome-app-launcher-info-dialog" target ="_blank">User Agent Switcher</a>
+		</div>
+		<input type="text" name="url" placeholder="Type the file location here..." required>
+	</form>
+	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="assets/js/waterfall.js"></script>
+</body>
+</html>
