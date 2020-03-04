@@ -19,6 +19,6 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "@diogocercilio/binary-2-text-2-binary": "1.0.4"
+    "@diogocercilio/binary-2-text-2-binary": "1.0.5"
   }
 }
