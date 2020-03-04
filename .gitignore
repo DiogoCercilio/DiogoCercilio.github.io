@@ -1,2 +1,4 @@
 _docs/
 _docs/*
+.DS_Store
+.vscode

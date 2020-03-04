@@ -805,7 +805,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 }
 
 .aboutContent {
-	width:calc(50% - 74px);
+	width:50%;
 	min-height:530px;
 	float:left;
 	padding:13px;
@@ -829,7 +829,7 @@ ul#sliding-navigation li.sliding-element a:hover, ul#sliding-navigation li.slidi
 	text-align:justify;
 }
 .aboutImage {
-	width:calc(50% - 74px);
+	width:50%;
 	height:auto;
 	min-height:530px;
 	float:left;
