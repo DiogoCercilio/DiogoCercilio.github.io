@@ -35,10 +35,10 @@ body {
             .ads {
                 margin: 100px auto 0;
                 text-align: center;
-
-                img {
-                    max-width: 100%;
-                }
+                background: #eff1f0;
+                min-height: 100px;
+                box-shadow: 1px 1px 0 rgb(220, 220, 220) inset, -1px -1px 0 rgb(255, 255, 255) inset;
+                border-radius: 3px;
             }
         
             .row {
