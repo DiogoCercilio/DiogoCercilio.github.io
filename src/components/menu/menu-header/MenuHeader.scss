@@ -1,0 +1,14 @@
+.MenuHeader {
+    display: flex;
+    flex: 1;
+    padding-right: 20px;
+    margin: 0;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}

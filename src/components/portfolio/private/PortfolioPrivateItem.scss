@@ -1,0 +1,63 @@
+.PortfolioItem {
+    padding: 10px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-width: 70px;
+    
+    img {
+        width: 120px;
+        max-width: 100%;
+        -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0,0,0,.07)));
+        
+        @media (min-width: 768px) {
+            width: 70px;
+        }
+
+        &.embraer {
+            width: 100px;
+            filter: invert(1) brightness(3) grayscale(1);
+        }
+
+        &.guiche {
+            width: 70px;
+        }
+
+        &.focus {
+            width: 40px;
+            filter: grayscale(1) brightness(3);
+        }
+
+        &.safra {
+            width: 60px;
+            filter: grayscale(1) invert(1) brightness(1);
+        }
+
+        &.btg {
+            filter: brightness(0) invert(1) grayscale(1);
+        }
+
+        &.poliedro {
+            filter: grayscale(1) brightness(10);
+        }
+        
+        &.omni {
+            filter: grayscale(1) brightness(10);
+        }
+
+        &.sinduscon {
+            filter: grayscale(1) brightness(10);
+        }
+    }
+
+    svg {
+        max-width: 100px;
+        -webkit-box-reflect: below 20px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0,0,0,.07)));
+
+        &.santander {
+            width: 100px;
+            margin-top: 6px;
+        }
+    }
+}

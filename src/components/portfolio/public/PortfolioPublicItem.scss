@@ -1,0 +1,87 @@
+.PortfolioPublicItem {
+    display: flex;
+    perspective: 1000px;
+    transition: 1s filter ease;
+    
+    @media (max-width: 767px) {            
+        justify-content: center;
+    }
+
+	&:nth-child(1) {
+        .banner-wrapper {
+            transform: rotateY(-20deg) scale(.9);
+        }
+        &:hover {
+            z-index: 2;
+            
+            .banner-wrapper {
+                transform: rotateY(0deg);
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        z-index: 1;
+
+        &:hover .banner-wrapper {
+            transform: translateY(-5px);
+        }
+    }
+
+    &:nth-child(3) {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            
+            .banner-wrapper {
+                transform: rotateY(20deg) scale(.9);
+            }        
+            &:hover {
+                z-index: 2;
+    
+                .banner-wrapper {
+                    transform: rotateY(0deg);
+                }
+            }            
+        }        
+    }
+
+    @media (max-width: 767px) {
+        .banner-wrapper,
+        &:hover .banner-wrapper {
+            transform: initial!important;
+        }
+    }
+
+	.banner-wrapper {
+		transition: 0.6s;
+        transform-style: preserve-3d;
+
+        @media (max-width: 767px) {
+            max-width: 85%;
+        }
+    }
+
+	.banner-face {		
+		backface-visibility: hidden;
+	}
+
+	.banner-face {
+		transform: rotateY(0deg);
+    }
+    
+    img {
+        width: 100%;
+        
+        @media (min-width: 767px) {            
+            filter: grayscale(1);
+            transition: .2s;
+
+            &:hover {
+                filter: grayscale(0);
+                box-shadow: 0 0 10px rgba(0,0,0,.2);
+            }
+        }
+    }
+}

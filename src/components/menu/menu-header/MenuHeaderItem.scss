@@ -1,0 +1,12 @@
+.MenuHeaderItem {
+    padding:  20px;
+    margin-right: 1px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,.4);
+
+    &.active {
+        color: #368c8b;
+        border-bottom: 1px solid #368c8b;        
+    }
+}
