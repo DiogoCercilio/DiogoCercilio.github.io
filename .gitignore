@@ -3,3 +3,4 @@ _docs/*
 .DS_Store
 .vscode
 node_modules
+.next

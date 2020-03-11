@@ -6,7 +6,7 @@
     top: 0;
     z-index: 3;
     background-color: rgba(0,0,0,.9);
-    padding-top: 70px;
+    top: 70px;
     transition: .2s .1s left cubic-bezier(0.37,0.2,0.05,1.0);
     
     @media(min-width: 768px) {        
