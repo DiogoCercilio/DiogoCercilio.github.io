@@ -22,3 +22,10 @@ export const useScroll = () => {
 
   return scroll
 }
+
+export const scrollTo = (top)=> {
+  window.scroll({ 
+    top, 
+    behavior: 'smooth' 
+  });
+}  

@@ -54,6 +54,7 @@ export const sections = [
     { id: 1, name: 'About', alias: 'about' },
     { id: 2, name: 'Portfolio', alias: 'portfolio' },
     { id: 3, name: 'Skills', alias: 'skills' },
+    { id: 4, name: 'Blog', alias: 'blog', to: '/blog' },
 ]
 
 export const skills = {

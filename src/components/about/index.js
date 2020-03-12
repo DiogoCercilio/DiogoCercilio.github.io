@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.scss'
 import AboutBoxInfo from './AboutBoxInfo'
-import Loading from '../loading/Loading'
+import Loading from 'components/loading/Loading'
 
 export default function About({ onGetScroll, onClickSkill, aboutInfo, loading }) {
 

@@ -1,9 +1,10 @@
-import About from '../components/about'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import Portfolio from '../components/portfolio'
-import Sidebar from '../components/sidebar'
-import Skills from '../components/skills'
+import About from 'components/about'
+import Footer from 'components/footer'
+import Header from 'components/header'
+import Portfolio from 'components/portfolio'
+import Sidebar from 'components/sidebar/site'
+import SidebarBlog from 'components/sidebar/blog'
+import Skills from 'components/skills'
 
 export {
     About,
@@ -11,5 +12,6 @@ export {
     Header,
     Portfolio,
     Sidebar,
+    SidebarBlog,
     Skills
 }

@@ -7,12 +7,12 @@ import {
     personalPortfolio,
     skills, 
     categories    
-} from '../mocks/Mocks'
+} from 'mocks/Mocks'
 
 export default class Service {
     async getMocked(path) {
         switch(path) {
-            case "/api/sections": return Promise.resolve(sections)
+            case "/api/sections": return Promise.resolve(sections)//.catch(e=> { throw new Error('Error on API response') })
             case "/api/contact": return Promise.resolve(footerLinks)
             case "/api/about": return Promise.resolve(aboutInfo)
             case "/api/portfolio/public": return Promise.resolve(publicPortfolio)

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import SkillsService from '../../services/SkillsService'
+import SkillsService from 'services/SkillsService'
 import SkillsTabs from './tabs/SkillsTabs'
 import SkillsItem from './SkillItem'
-import Loading from '../loading/Loading'
+import Loading from 'components/loading/Loading'
 
 import './Skills.scss'
 

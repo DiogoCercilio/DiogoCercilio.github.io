@@ -1,6 +1,6 @@
 import React from 'react'
 import FooterLink from './FooterLink'
-import Loading from '../loading/Loading'
+import Loading from 'components/loading/Loading'
 
 import './Footer.scss'
 

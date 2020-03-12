@@ -1,6 +1,6 @@
 import React from 'react'
 import SkillsTab from './SkillsTab'
-import Loading from '../../loading/Loading'
+import Loading from 'components/loading/Loading'
 
 import './SkillsTabs.scss'
 
