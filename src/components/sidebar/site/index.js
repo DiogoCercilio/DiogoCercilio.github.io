@@ -5,6 +5,7 @@ import ErrorBoundary from 'ErrorBoundary'
 import '../Sidebar.scss'
 
 export default function Sidebar({ menu, showSidebar, itemActive, onChangeMenu, loading }) {
+        
     return (
         <aside className={`Sidebar${showSidebar ? " active" : '' }`}>
             <ErrorBoundary fallback={"Something went wrong..."}>
