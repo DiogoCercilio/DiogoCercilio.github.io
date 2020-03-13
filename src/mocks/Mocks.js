@@ -254,34 +254,41 @@ export const personalPortfolio = [
     },
     { 
         id: 2, 
+        title: 'Performance for Web Presentation', 
+        description: 'A complete presentation about Performance for Web', 
+        link: 'https://slides.com/diogocerciliu/performance-web-guiche-virtual#', 
+        linkLabel: 'See presentation'
+    },
+    { 
+        id: 3, 
         title: 'NPM Package - DC Form Validator', 
         description: 'A Vanilla JS form validator', 
         link: 'https://www.npmjs.com/package/dc-form-validator', 
         linkLabel: 'See on NPM'
     },
     { 
-        id: 3, 
+        id: 4, 
         title: 'NPM Package - Binary 2 Text 2 Binary', 
         description: 'A Binary / Text / Binary Converter', 
         link: 'https://www.npmjs.com/package/@diogocercilio/binary-2-text-2-binary', 
         linkLabel: 'See on NPM' 
     },
     { 
-        id: 4, 
+        id: 5, 
         title: 'Chrome Dino Game', 
         description: 'The Chrome Dino Game re-implemented', 
         link: 'https://github.com/DiogoCercilio/dino', 
         linkLabel: 'See on Github' 
     },
     { 
-        id: 5, 
+        id: 6, 
         title: 'Snake Game', 
         description: 'The Snake Game using Vanilla JS', 
         link: 'https://github.com/DiogoCercilio/snake-game', 
         linkLabel: 'See on Github' 
     },
     { 
-        id: 6, 
+        id: 7, 
         title: 'Node / Express / Typescript Scaffold', 
         description: 'Idea for NodeJS project structure', 
         link: 'https://github.com/DiogoCercilio/snake-game', 
