@@ -1,7 +1,10 @@
 import React from 'react'
-import './About.scss'
 import AboutBoxInfo from './AboutBoxInfo'
 import Loading from 'components/loading/Loading'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import './About.scss'
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 export default function About({ onGetScroll, onClickSkill, aboutInfo, loading }) {
 
@@ -12,7 +15,14 @@ export default function About({ onGetScroll, onClickSkill, aboutInfo, loading })
     return (
         <section className="About" ref={e=> onGetScroll(e)}>
             <div className="container">
-                <img loading="lazy" className="about-image" width="116" height="116" src="me.jpeg" alt="Me" />
+                <LazyLoadImage
+                    effect="opacity"
+                    className="about-image" 
+                    width="116" 
+                    height="116" 
+                    src="me.jpeg" 
+                    alt="Me"                    
+                />
 
                 <h1>Diogo Cercílio</h1>
                 <h2><span role="img" aria-label="brain">🧠</span> Brazilian Fullstack developer. 
