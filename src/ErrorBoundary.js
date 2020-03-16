@@ -4,7 +4,7 @@ export default class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props)
         this.state = { hasError: false }
-        if (!this.props.fallback) throw 'Error Boundary fallback is required'
+        if (!this.props.fallback) throw new Error('Error Boundary fallback is required')
     }
 
     static getDerivedStateFromError = () => { 

@@ -11,7 +11,7 @@ export default function Home({ offset, onUpdateOffset, service }) {
 
     useEffect(() => {
         (async ()=> setAboutInfo(await service.getAboutInfo()))()
-    }, [])
+    }, [service])
 
     const onClickSkill = (e, alias)=> {
         e.preventDefault();

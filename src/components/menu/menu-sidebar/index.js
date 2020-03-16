@@ -10,10 +10,7 @@ export default function MenuSidebar({ menu, itemActive, onChangeMenu, loading })
         <menu className="MenuSidebar">
             <ul>
                 {loading ? <Loading zoom=".4" color="#fff" /> : 
-                    menu.map(item=> {
-                        if(item.alias === "blog") return;
-                        return <MenuSidebarItem key={item.id} item={item} itemActive={itemActive} onChangeMenu={onChangeMenu} />
-                    })
+                    menu.filter(i=>i.alias!=="blog").map(i=> <MenuSidebarItem key={i.id} item={i} itemActive={itemActive} onChangeMenu={onChangeMenu} />)
                 }
             </ul>
         </menu>

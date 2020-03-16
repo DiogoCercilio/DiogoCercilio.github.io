@@ -14,7 +14,7 @@ export default function PortfolioPersonal({ portfolio }) {
                     {!portfolio ? <Loading zoom=".3" color="#333" /> : portfolio.map(item=> <PortfolioPersonalItem key={item.id} item={item} />)}
                 </div>
 
-                <a className="see-all" href="https://github.com/DiogoCercilio" target="_blank">
+                <a className="see-all" href="https://github.com/DiogoCercilio" target="_blank" rel="noopener noreferrer">
                     See all projects on Github
                 </a>
             </div>

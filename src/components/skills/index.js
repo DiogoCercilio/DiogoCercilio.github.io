@@ -20,7 +20,7 @@ export default function Skills({ onGetScroll, activeCategory, onChangeCategory }
             setSkills(await skillsService.getSkills(activeCategory))
             setLoading(false)
         })()
-    }, [])
+    }, [activeCategory])
 
     return (
         <section className="Skills" ref={e=> onGetScroll(e)}>

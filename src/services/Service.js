@@ -20,6 +20,8 @@ export default class Service {
             case "/api/portfolio/personal": return Promise.resolve(personalPortfolio)
             case "/api/skills": return Promise.resolve(skills)
             case "/api/categories": return Promise.resolve(categories)
+            default:
+                throw new Error("Not implemented yet...")
         }
     }
 

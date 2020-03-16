@@ -28,7 +28,7 @@ export default function Site() {
     const i = findOffset(offset, scroll);
     if (i) setActiveMenuItem(i.id);
 
-  }, [scroll])
+  }, [scroll, offset])
 
   useEffect(() => {
     (async function() {
