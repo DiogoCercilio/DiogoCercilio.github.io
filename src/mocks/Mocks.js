@@ -198,7 +198,7 @@ export const privatePortfolio = [
         type: 'img', 
         label: 'Embraer', 
         alias: 'embraer', 
-        src: 'embraer.png' 
+        src: 'embraer.svg' 
     },
     { 
         id: 2, 
@@ -226,7 +226,7 @@ export const privatePortfolio = [
         type: 'img', 
         label: 'Banco BTG Pactual', 
         alias: 'btg', 
-        src: 'btg-pactual.png' 
+        src: 'btg-pactual.svg' 
     },
     { 
         id: 6, 
