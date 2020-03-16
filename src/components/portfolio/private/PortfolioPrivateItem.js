@@ -11,6 +11,7 @@ export default function PortfolioPrivateItem({ item }) {
                 className={item.alias} 
                 src={`logos/${item.src}`} 
                 title={item.label} 
+                width="70"
                 alt={item.label}
                 loading="lazy"
                 effect="blur"

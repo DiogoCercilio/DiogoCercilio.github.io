@@ -11,6 +11,7 @@ export default function PortfolioPublicItem({ banner }) {
                 <a href={banner.link} className="banner-face" title={banner.title}>
                     <LazyLoadImage
                         alt="Banner"
+                        width="100"
                         src={`screenshots/${banner.img}`} 
                         loading="lazy"
                         effect="opacity"
