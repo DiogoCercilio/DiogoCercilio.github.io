@@ -50,4 +50,13 @@
             display: flex;
         }
     }
+
+    .about-image {
+        width: 100px;
+        max-width: 100%;
+        border-radius: 50%;
+        margin: 0 auto 24px;
+        border: 7px solid #fff;
+        height: 116px;
+    }
 }
