@@ -4,13 +4,13 @@ import Loading from 'components/loading/Loading'
 
 import './MenuSidebar.scss'
 
-export default function MenuSidebar({ menu, itemActive, onChangeMenu, loading }) {
+export default function MenuSidebar({ menu }) {
         
     return (
         <menu className="MenuSidebar">
             <ul>
-                {loading ? <Loading zoom=".4" color="#fff" /> : 
-                    menu.filter(i=>i.alias!=="blog").map(i=> <MenuSidebarItem key={i.id} item={i} itemActive={itemActive} onChangeMenu={onChangeMenu} />)
+                {!menu.length ? <Loading zoom=".4" color="#fff" /> : 
+                    menu.filter(i=>i.alias!=="blog").map(i=> <MenuSidebarItem key={i.id} item={i} />)
                 }
             </ul>
         </menu>

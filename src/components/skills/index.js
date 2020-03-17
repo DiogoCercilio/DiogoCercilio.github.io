@@ -33,7 +33,7 @@ export default function Skills({ onGetScroll, activeCategory, onChangeCategory }
                         onChangeCategory={onChangeCategory}
                         loading={!categories}
                         />
-                    {loading ? <Loading zoom=".3" color={'#333'} /> : 
+                    {loading ? <Loading/> : 
                         skills[activeCategory].map((category, index)=> <SkillsItem key={`${category.id}_${index}`} category={category}/>
                         )}
                 </div>

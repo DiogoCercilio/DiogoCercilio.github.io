@@ -16,5 +16,6 @@ export const initialOffset = [
 ]
 
 export const findOffset = (offset, scroll)=> {
+    if (!offset) return
     return offset.find(i=> scroll.y >= i.min && scroll.y <= i.max)
 }

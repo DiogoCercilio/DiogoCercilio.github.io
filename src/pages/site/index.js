@@ -14,6 +14,8 @@ import './Site.scss';
 
 const sectionsService = new SectionsService();
 
+export const SiteContext = React.createContext()
+
 export default function Site() {
 
   const [ isShowingSidebar, setIsShowingSidebar ] = useState(false);
@@ -53,32 +55,30 @@ export default function Site() {
     }
   }
 
+  const onUpdateOffset = (i, e)=> {
+    setOffset(getOffset(offset, i, e))
+  }
+
   return (
     <>
       {error ? <Error/> :
-      <>
-      <Header
-        onChangeMenuTrigger={isMenuOpen=> setIsShowingSidebar(isMenuOpen) }
-        itemActive={mainMenu.find(item=> item.id === activeMenuItem)}
-        isMenuOpen={isShowingSidebar}
-      />
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" render={()=> <Home offset={offset} onUpdateOffset={(i, e)=> setOffset(getOffset(offset, i, e))} service={sectionsService} />} />
-        </Switch>
-        <Sidebar
-            menu={mainMenu} 
-            showSidebar={isShowingSidebar}
-            itemActive={activeMenuItem}
-            onChangeMenu={active=> onChangeMenuHandler(active)}
-            loading={!mainMenu.length}
-        />
-        <Footer 
-          footerLinks={footerLinks} 
-          loading={!footerLinks} 
-        />
-      </BrowserRouter>
-      </>
+      <SiteContext.Provider value={{
+        offset,
+        onUpdateOffset,
+        activeMenuItem,
+        isShowingSidebar,
+        setIsShowingSidebar,
+        onChangeMenuHandler
+      }}>
+        <Header menu={mainMenu} />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" render={()=> <Home service={sectionsService} />} />
+          </Switch>
+          <Sidebar menu={mainMenu} />
+          <Footer menu={footerLinks} />
+        </BrowserRouter>
+      </SiteContext.Provider>
       }
     </>
   );

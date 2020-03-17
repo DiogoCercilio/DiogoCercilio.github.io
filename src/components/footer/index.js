@@ -4,12 +4,12 @@ import Loading from 'components/loading/Loading'
 
 import './Footer.scss'
 
-export default function Footer({ footerLinks, loading }) {    
+export default function Footer({ menu }) {    
     return (
         <footer className="Footer">
             <div className="container">
                 <ul className="footer-list">
-                    {loading ? <Loading zoom=".3" color="#fff" /> : footerLinks.map(link=> <FooterLink key={link.id} item={link}/>)}
+                    {!menu ? <Loading color="#fff" /> : menu.map(link=> <FooterLink key={link.id} item={link}/>)}
                 </ul>
             </div>
         </footer>

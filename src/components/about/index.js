@@ -30,7 +30,7 @@ export default function About({ onGetScroll, onClickSkill, aboutInfo, loading })
                 </h2>
                 <div className="about-boxes">
                     {loading ? 
-                        <Loading zoom=".3" color="#333"/> : 
+                        <Loading/> : 
                         aboutInfo.map(item=> <AboutBoxInfo key={item.id} item={item} onClickSkill={onClickSkill} />)
                     }
                 </div>

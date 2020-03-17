@@ -11,7 +11,7 @@ export default function PortfolioPrivate({ portfolio }) {
             <h5>Company Experiences:</h5>
             <div className="PortfolioPrivate container">
                 {!portfolio ? 
-                    <Loading zoom=".3" color="#333" /> : 
+                    <Loading/> : 
                     portfolio.map(item=> <PortfolioPrivateItem key={item.id} item={item} />)
                 }
             </div>

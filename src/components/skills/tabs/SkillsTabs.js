@@ -9,7 +9,7 @@ export default function SkillsTabs({ active, onChangeCategory, categories, loadi
     return (
         <div className='SkillsTabs'>
             <ul>
-                {loading ? <Loading zoom=".3" color="#333"/> : categories.map(category=> {
+                {loading ? <Loading/> : categories.map(category=> {
                     return <SkillsTab 
                                 key={category.id} 
                                 category={category} 
