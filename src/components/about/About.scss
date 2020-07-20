@@ -1,5 +1,6 @@
 .About {
     box-sizing: border-box;
+    min-height: 100vh;
 
     @media (max-width: 767px) {
         padding-top: 100px;

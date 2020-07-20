@@ -94,7 +94,7 @@ export const skills = {
         { 
             id: 5, 
             name: 'Javascript', 
-            tags: [ 'SOLID', 'Data Structures', 'Design Patterns','Api integration', 'Typescript', 'Semantic Versioning', 'OOP', 'Vanilla', 'ES6+', 'Ajax', 'Axios','React', 'React Native', 'GraphQL', 'Electron', 'Redux', 'NextJS', 'Angular 2+', 'Vuejs', 'Debugging', 'JQuery', 'Canvas', 'JSON', 'Ionic', 'Template Engines' ] 
+            tags: [ 'SOLID', 'Data Structures', 'Design Patterns','Api integration', 'Typescript', 'Semantic Versioning', 'OOP', 'Vanilla', 'ES6+', 'Ajax', 'Axios','React', 'React Native', 'GraphQL', 'Electron', 'Redux', 'NextJS', 'Angular 2+', 'Angular Material', 'Vuejs', 'Debugging', 'JQuery', 'Canvas', 'JSON', 'Ionic', 'Template Engines' ] 
         },
         { 
             id: 6, 
@@ -126,7 +126,7 @@ export const skills = {
         { 
             id: 5, 
             name: 'Database', 
-            tags: [ 'DynamoDB', 'Mysql', 'PostgreSQL', 'NoSql', 'Relational', 'MongoDB', 'GraphQL', 'Knex' ]
+            tags: [ 'DynamoDB', 'Mysql', 'PostgreSQL', 'NoSql', 'Relational', 'MongoDB', 'GraphQL', 'Knex', 'TypeORM' ]
         },
         { 
             id: 6, 

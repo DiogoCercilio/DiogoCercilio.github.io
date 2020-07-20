@@ -9,7 +9,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 export default function About({ onGetScroll, onClickSkill, aboutInfo, loading }) {
 
     const getYears = ()=> {
-        return (new Date()).getFullYear() - 2012;
+        return (new Date()).getFullYear() - 2011;
     }
 
     return (
