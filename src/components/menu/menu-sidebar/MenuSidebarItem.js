@@ -10,7 +10,7 @@ export default function ItemMenuSidebar({ item }) {
 
     return (
         <li className={`MenuSidebarItem${siteContext.activeMenuItem === item.id ? ' active' : ''}`}>
-            {item.alias !== 'blog' ?
+            {!item.to ?
                 <Link to={`#${item.alias}`} onClick={e=> {
                     e.preventDefault(); 
                     siteContext.onChangeMenuHandler(item.id)

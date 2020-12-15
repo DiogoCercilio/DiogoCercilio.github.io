@@ -10,7 +10,7 @@ export default function MenuSidebar({ menu }) {
         <menu className="MenuSidebar">
             <ul>
                 {!menu.length ? <Loading zoom=".4" color="#fff" /> : 
-                    menu.filter(i=>i.alias!=="blog").map(i=> <MenuSidebarItem key={i.id} item={i} />)
+                    menu.map(i=> <MenuSidebarItem key={i.id} item={i} />)
                 }
             </ul>
         </menu>
