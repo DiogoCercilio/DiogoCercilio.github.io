@@ -255,7 +255,7 @@ export const privatePortfolio = [
 export const personalPortfolio = [
     { 
         id: 1, 
-        title: 'HTML5 + CSS3 Only Compass', 
+        title: 'HTML5 + CSS3 Only Compass ', 
         description: 'Project Winner from the IMasters competition', 
         link: 'https://codepen.io/dcweb/full/WbyYeX',
         linkLabel: 'See on Codepen'
