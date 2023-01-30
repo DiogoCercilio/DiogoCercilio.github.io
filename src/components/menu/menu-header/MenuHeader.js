@@ -10,7 +10,7 @@ export default function MenuHeader({ menu }) {
 
     useEffect(()=> {
         setItemActive(menu.find(item=> item.id === siteContext.activeMenuItem))
-    }, [siteContext.activeMenuItem]) 
+    }, [siteContext.activeMenuItem, menu]) 
 
     return (
         <menu className='MenuHeader'>

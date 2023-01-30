@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import MenuTrigger from 'components/menu/menu-trigger/MenuTrigger'
 import MenuHeader from 'components/menu/menu-header/MenuHeader'
 import './Header.scss'
