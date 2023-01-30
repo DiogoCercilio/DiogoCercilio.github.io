@@ -1,0 +1,28 @@
+.SkillsItem {
+    margin-bottom: 20px;
+    // line-height: 60px;
+    padding: 20px 10px;
+    color: #aaa;
+    // min-height: 100px;    
+
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0 0 20px;
+    }
+    
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        
+        span {
+            background-color: #215656;
+            padding: 6px;
+            border-radius: 3px;
+            margin: 3px;
+            font-family: monospace;
+            color: #fff;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}

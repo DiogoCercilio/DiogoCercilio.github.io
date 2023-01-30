@@ -1,0 +1,39 @@
+.AboutInfo {
+    flex: 1;
+    margin: 0 18px;
+    display: flex;
+    flex-direction: column;
+    
+    h3 {
+        font-family: 'Caveat', cursive;
+        font-size: 24px;
+        color: #368c8b;
+        margin: 0;
+        text-align: center;
+        
+        @media (min-width: 768px) {
+            text-align: initial;
+        }                      
+    }
+
+    .about-wrapper-info {
+        p {
+            color: #888;
+            font-size: 14px;
+            line-height: 20px;           
+        }
+
+        @media (min-width: 1000px) {
+            min-height: 150px;
+        }            
+    }
+
+    a {
+        justify-content: inherit;   
+        margin-bottom: 40px;
+
+        @media (min-width: 1000px) {
+            margin-bottom: 0;
+        }  
+    }
+}

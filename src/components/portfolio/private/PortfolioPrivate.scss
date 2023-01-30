@@ -1,0 +1,25 @@
+.PortfolioPrivate {
+    &.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 120px;
+        
+        &:nth-child(2) {
+            @media (max-width: 767px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }            
+        }
+
+        &:nth-child(2) {
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            border-width: 1px 0; 
+            margin: 50px auto;
+        }
+    }
+}

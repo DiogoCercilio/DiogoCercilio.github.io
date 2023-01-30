@@ -1,0 +1,15 @@
+.PortfolioPersonal {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    a.see-all {
+        color: #368c8b;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}

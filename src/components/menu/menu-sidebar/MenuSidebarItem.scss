@@ -1,0 +1,35 @@
+.MenuSidebarItem {
+    padding: 4px 8px;
+    line-height: 40px;
+    font-weight: 100;
+    background: rgba(0,0,0,.4);
+    cursor: pointer;
+    transition: .2s color, .5s padding-left;
+    user-select: none;
+
+    &:hover {
+        padding-left: 16px;
+
+        a {
+            color: #368c8b;
+            text-decoration: none;
+        }        
+    }
+    
+    &.active {
+        pointer-events: none;
+        background-color: #368c8b;
+        cursor: initial;
+        a {
+            color: #fff;
+        }
+    }
+
+    a {
+        color: #aaa;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+    }
+}

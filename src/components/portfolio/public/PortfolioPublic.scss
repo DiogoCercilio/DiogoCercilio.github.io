@@ -1,0 +1,16 @@
+.PortfolioPublic {
+    flex: 1;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 0 #000;
+    align-content: baseline;
+    margin-bottom: 50px;
+
+    &.container {
+        @media (max-width: 767px) {            
+            flex-direction: column;
+        }        
+    }        
+}
