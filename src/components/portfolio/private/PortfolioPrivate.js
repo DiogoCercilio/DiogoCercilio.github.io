@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioPrivateItem from './PortfolioPrivateItem'
-import Loading from 'components/loading/Loading'
+import Loading from '../../loading/Loading'
 
 import './PortfolioPrivate.scss';
 

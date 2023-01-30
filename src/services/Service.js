@@ -7,7 +7,7 @@ import {
     personalPortfolio,
     skills, 
     categories    
-} from 'mocks/Mocks'
+} from '../mocks/Mocks'
 
 export default class Service {
     async getMocked(path) {

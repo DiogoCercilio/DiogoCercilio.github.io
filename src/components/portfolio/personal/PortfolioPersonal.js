@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioPersonalItem from './PortfolioPersonalItem';
-import Loading from 'components/loading/Loading'
+import Loading from '../../loading/Loading'
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 import './PortfolioPersonal.scss';

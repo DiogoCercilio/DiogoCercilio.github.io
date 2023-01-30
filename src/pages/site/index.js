@@ -5,7 +5,7 @@ import { getOffset, initialOffset, findOffset } from '../../components/offset'
 import { Header, Sidebar, Footer } from '../../components'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { SectionsService } from 'services';
+import { SectionsService } from '../../services';
 
 import Home from './home/index'
 import Error from './error/error-500'

@@ -1,6 +1,6 @@
 import React from 'react'
-import MenuTrigger from 'components/menu/menu-trigger/MenuTrigger'
-import MenuHeader from 'components/menu/menu-header/MenuHeader'
+import MenuTrigger from '../menu/menu-trigger/MenuTrigger'
+import MenuHeader from '../menu/menu-header/MenuHeader'
 import './Header.scss'
 
 export default function Header({ menu }) {

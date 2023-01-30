@@ -3,7 +3,7 @@ import PortfolioPrivate from './private/PortfolioPrivate';
 import PortfolioPublic from './public/PortfolioPublic';
 import PortfolioPersonal from './personal/PortfolioPersonal';
 
-import { WorksService } from 'services';
+import { WorksService } from '../../services';
 
 import './Portfolio.scss'
 

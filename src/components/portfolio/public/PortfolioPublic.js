@@ -1,7 +1,7 @@
 import React from 'react'
 import './PortfolioPublic.scss'
 import PortfolioPublicItem from './PortfolioPublicItem'
-import Loading from 'components/loading/Loading'
+import Loading from '../../loading/Loading'
 
 export default function PortfolioPublic({ portfolio }) {
 

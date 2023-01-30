@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuSidebarItem  from './MenuSidebarItem';
-import Loading from 'components/loading/Loading'
+import Loading from '../../loading/Loading'
 
 import './MenuSidebar.scss'
 

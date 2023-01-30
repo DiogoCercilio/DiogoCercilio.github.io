@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutBoxInfo from './AboutBoxInfo'
-import Loading from 'components/loading/Loading'
+import Loading from '../loading/Loading'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import './About.scss'

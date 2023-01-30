@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 
-import MenuSidebar from 'components/menu/menu-sidebar'
-import ErrorBoundary from 'ErrorBoundary'
+import MenuSidebar from '../../menu/menu-sidebar'
+import ErrorBoundary from '../../../ErrorBoundary'
 import { SiteContext } from '../../../pages/site'
 
 import '../Sidebar.scss'
